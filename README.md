@@ -233,12 +233,12 @@ If the algorithm of **erdbeermet.recognize** runs into a dead-end for a simulati
 This static function (it means you don't need a existing instance of the pipeline-class) is intended to be able to analyze individual scenarios. All possibilities of the previous work packages can be selected individually. This function is intended to be able to analyze individual scenarios. All possibilities of the previous work packages can be selected individually. A tree from `erdbeermet.tools.Tree` and, depending on the setting, a corresponding dictionary are returned.
 
 <details>
-<summary>Parameters to analyse a <b>single szenario</b> (click to expand)</summary>
+<summary>Parameters to analyse a <b>single scenario</b> (click to expand)</summary>
 
 | Parameter (with default values) | Type  | Description |
 | --- | --- | --- |
 |`scenario` | `class 'Scenario'` | A scenario given by the 'erdbeermet'-Packages. See also 'erdbeermet.simulate'.|
-|`first_candiate_only = False` | `bool` | If `True`, only consider the first found candidate for a merge event inside the function *recognize* from the *erdbeermet*-Package. See also *erdbeermet.recognition*.|
+|`first_candidate_only = True` | `bool` | If `True`, only consider the first found candidate for a merge event inside the function *recognize* from the *erdbeermet*-Package. See also *erdbeermet.recognition*.|
 | `B = []` | `list` | Leaf-identifier for the recognition algorithm. During the recognition no leaf from this list will be chosen to reduce as z. The default is `[]` (every leaf can be chosen). See also function *_find_candidates* from *erdbeermet.recognition*.|
 | `first_leafes = [0,1,2,3]` | `list` | The first leaves of the history simulation.|
 | `permu = False` | `bool` |  If set to `True` the algorithm will iterate over all permutations (in random order) in range of *k-leaves* (k is equal to the current number of items, between `min_leafes` and `max_leafes`) as leaf identifier `B` of size `subset` (maybe 3 or 4) until an R-Map is correctly identified (reconition tree has *no dead end*). In this case the resulting *.csv* file will have the following **additional columns**: **permu_count** (number of iteratios needed), **max_permu** (maximum number of possible permutations) and **permutation** (permutation as leaf_identifier B which produces the first R-Maps). Exacly like [workpackage 3](#workpackage-3).|
