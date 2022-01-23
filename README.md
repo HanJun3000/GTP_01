@@ -229,7 +229,7 @@ If the algorithm of **erdbeermet.recognize** runs into a dead-end for a simulati
 
 
 ---
-## **Analyse a single Szenario**
+## **Analyse a single Scenario**
 This static function (it means you don't need a existing instance of the pipeline-class) is intended to be able to analyze individual scenarios. All possibilities of the previous work packages can be selected individually. This function is intended to be able to analyze individual scenarios. All possibilities of the previous work packages can be selected individually. A tree from `erdbeermet.tools.Tree` and, depending on the setting, a corresponding dictionary are returned.
 
 <details>
