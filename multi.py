@@ -12,7 +12,7 @@ if __name__ == "__main__":
     N = 10
     min_leafes = 6
     max_leafes = 9
-    first_leafes = [1,2,3,4]
+    first_leafes = [0,1,2,3]
     B = [0,1,2,3]
     leaves_unknown = True
     subset = 4
