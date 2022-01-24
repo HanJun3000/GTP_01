@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from audioop import add
 import os, logging, time
-from re import sub
 
 from erdbeermet.simulation import simulate, Scenario
 from erdbeermet.recognition import recognize, is_pseudometric
