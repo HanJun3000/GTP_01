@@ -549,7 +549,7 @@ class Pipeline:
                                     f" seed_permutations:{seed_permutations}\n"
                         else:
                             seeds = f"# seed_szenario:{seed_szenario}|"\
-                                    f" seed_pipeline:{seed_pipeline}|\n"
+                                    f" seed_pipeline:{seed_pipeline}\n"
 
                         f.write(f"# Original Name: {file_name}\n")
                         f.write(seeds)
@@ -575,7 +575,7 @@ class Pipeline:
                     f" seed_permutations:{seed_permutations}\n"
             else:
                 seeds = f"# seed_szenario:{seed_szenario}|"\
-                    f" seed_pipeline:{seed_pipeline}|"
+                    f" seed_pipeline:{seed_pipeline}\n"
 
             f.write(f"# Original Name: {file_name}\n")
             f.write(seeds)
